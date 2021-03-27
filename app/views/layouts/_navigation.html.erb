@@ -1,0 +1,18 @@
+<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  
+  <%= link_to 'MyBlog', root_path, class: "navbar-brand ml-5 mr-5 p-2", id: "logo" %>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <li class="navbar-item">
+        <%= link_to 'Articles', articles_path %>
+      </li>
+
+      <li class="navbar-item">
+        <%= link_to 'Create Article', new_article_path %>
+      </li>
+
+    </div>
+
+  </div>
+</nav>

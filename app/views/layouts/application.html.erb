@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1 ">
     <title>Blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,11 +11,15 @@
   </head>
 
   <body>
-    <%= yield %>
+  
+    <%= render 'layouts/navigation' %>
+    <div class="container">
     <% flash.each do |name, msg| %>
       <ul>
         <li><%= msg %></li>
       </ul>
       <% end %>
+      <%= yield %>
+      </div>
   </body>
 </html>
